@@ -1,0 +1,18 @@
+.nplayer {
+  --np-primary: #0095ff;
+  --np-primary-rgb: 0, 149, 255;
+  --np-body-light: #fff;
+  --np-body-light-secondary: #f6f6f6;
+  --np-body-dark: #000;
+  --np-body-dark-secondary: #090909;
+  --np-text-white: #fff;
+  --np-text-black: #000;
+  background: var(--np-body-dark);
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+.nplayer video {
+  width: 100%;
+  height: auto;
+}/*# sourceMappingURL=nplayer.css.map */
