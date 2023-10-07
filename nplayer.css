@@ -7,62 +7,33 @@
   --np-body-dark-secondary: #090909;
   --np-text-white: #fff;
   --np-text-black: #000;
-  background: var(--np-body-dark);
+  background: var(--np-body-dark-secondary);
   width: 100%;
   height: auto;
-  display: flex;
   position: relative;
+  overflow: hidden;
 }
 .nplayer video {
   width: 100%;
-  height: auto;
+  height: 100%;
   z-index: 1;
 }
 .nplayer .controls {
   position: absolute;
-  display: flex;
-  top: 0;
+  bottom: 0;
   left: 0;
   right: 0;
-  width: 100%;
-  height: 800px;
+  color: #fff;
   z-index: 100;
-  opacity: 0;
   transition: opacity 150ms ease-in-out;
-  pointer-events: none;
-}
-.nplayer .controls a {
-  margin: 20px;
-  pointer-events: all;
-}
-.nplayer .controls a svg {
-  color: #fff;
-}
-.nplayer .controls button {
-  margin: auto;
-  margin-right: 20px;
-  background: none;
-  border: none;
-  outline: none;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  pointer-events: all;
-  cursor: pointer;
-}
-.nplayer .controls button svg {
-  color: #fff;
 }
 .nplayer .controls::before {
   content: "";
   position: absolute;
-  top: 0;
-  background: linear-gradient(to bottom, rgb(0, 0, 0), transparent);
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent);
   width: 100%;
   aspect-ratio: 12/1;
   z-index: -1;
   pointer-events: none;
-}
-.nplayer .controls.show {
-  opacity: 1;
 }/*# sourceMappingURL=nplayer.css.map */

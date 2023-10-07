@@ -7,9 +7,6 @@ class NPlayer {
 
     this.controls = document.createElement("div");
     this.controls.classList.add("controls");
-    this.playerElement.insertBefore(
-      this.controls,
-      this.playerElement.firstChild
-    );
+    this.playerElement.appendChild(this.controls);
   }
 }
