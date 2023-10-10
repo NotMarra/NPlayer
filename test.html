@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="nplayer.css" />
-    <script src="nplayer.js"></script>
+    <script src="nplayer.js" type="module"></script>
     <title>NPlayer Testing</title>
 
     <style>
@@ -27,7 +27,9 @@
       <video src="placeholder.mp4"></video>
     </div>
 
-    <script>
+    <script type="module">
+      import NPlayer from "./nplayer.js";
+
       const player = new NPlayer("#player");
     </script>
   </body>
