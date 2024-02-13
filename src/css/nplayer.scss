@@ -7,6 +7,7 @@
   --np-body-dark-secondary: #090909;
   --np-text-white: #fff;
   --np-text-black: #000;
+  --np-icons-default: #fff;
 
   background: var(--np-body-dark-secondary);
   width: 100%;
@@ -28,6 +29,8 @@
     color: #fff;
     z-index: 100;
     transition: opacity 150ms ease-in-out;
+    display: flex;
+    padding: 10px 0;
 
     &::before {
       content: "";
@@ -39,5 +42,31 @@
       z-index: -1;
       pointer-events: none;
     }
+
+    button {
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      color: inherit;
+      padding: 0;
+      margin: 0;
+      width: 35px;
+      height: 35px;
+      margin: 0 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: color 150ms ease-in-out;
+
+      &:hover {
+        .icon {
+          transition: background 150ms ease-in-out;
+          background-color: var(--np-primary);
+        }
+      }
+    }
   }
 }
+
+@import "icons";
